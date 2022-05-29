@@ -1,1 +1,83 @@
 
+
+@media screen and (max-width:1200px) {
+    /* --- Header --- */
+    .container header .content-header {
+        width: 970px;
+    }
+}
+
+
+
+
+
+@media screen and (max-width: 992px) {
+    /* --- Header --- */
+
+    .container header .content-header {
+        width: 750px;
+    }
+
+}
+
+
+@media screen and (max-width: 768px) {
+    /* --- Header --- */
+    /* --- Créer ou appeler le menu téle --- */
+    .container header .content-header {
+        width: 750px;
+    }
+
+    /* --- Menu --- */
+    .humberger {
+        display: flex;
+    }
+
+    .container header .content-header .main-menu  {
+        justify-content: space-evenly;
+        width: 120px;
+    }
+
+    .container header .content-header .main-menu ul {
+        background-color: rgb(91, 96, 96);
+        display: none;
+        flex-direction: column;
+        justify-content: flex-start ;
+        position: absolute;
+        top: 97px;
+        left: 0;
+        width: 100%;
+        height: auto;
+    }
+
+    .container header .content-header .main-menu ul li {
+        height: 50px;
+        width: 100%;
+        text-align: left;
+        line-height: 4;        
+        padding-left: 20px;
+    }
+
+    .container header .content-header .main-menu .humberger:hover + ul {
+        display: flex;
+        color: var(--main-color);
+    }
+
+    .container header .content-header .main-menu ul:hover {
+        display: flex;
+    }
+    
+    .container header .content-header .main-menu .humberger:hover::after {
+        content: "";
+        position: absolute;
+        left: -50px;
+        width: 400%;
+        height: 60px;
+    }
+}
+
+
+
+
+
+
