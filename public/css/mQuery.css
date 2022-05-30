@@ -21,7 +21,12 @@
 }
 
 
+
 @media screen and (max-width: 768px) {
+    .left, .right {
+        display: none;
+    }
+
     /* --- Header --- */
     /* --- Créer ou appeler le menu téle --- */
     .container header .content-header {
@@ -39,7 +44,7 @@
     }
 
     .container header .content-header .main-menu ul {
-        background-color: rgb(91, 96, 96);
+        background-color: #0e1720;
         display: none;
         flex-direction: column;
         justify-content: flex-start ;
@@ -74,10 +79,30 @@
         width: 400%;
         height: 60px;
     }
+
+
+    /* --------- Menu ----------- */
+    .container main .landing .art-landing {
+        background-color: var(--transparent-color);
+        width: 100%;
+
+    }
+    
+    .container main .landing .art-landing .cadre-descript {
+        width: 100%;
+    }
 }
 
 
 
 
+@media screen and (max-width: 480px) {
+    /* --- Header --- */
+
+    /* --- Menu --- */
+    .container main .landing .art-landing .cadre-descript h2 {
+        font-size: 26px;
+    }
+}
 
 

@@ -3,6 +3,23 @@
     padding:0%;
     margin:0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.left, .right {
+    color: #fff;
+    position: absolute;
+    z-index: 3;
+}
+.left:hover, .right:hover {
+    color: rgb(133, 114, 114);
+    cursor: pointer;
+}
+.left {
+    left: 30px
+}
+.right {
+    right: 30px
 }
 
 .humberger {
@@ -18,11 +35,13 @@ body {
 
 :root {
     --main-color: #19c8fa;
-    -transparent-color: rgb(15 116 143 / 70%);
+    --transparent-color: rgb(15 116 143 / 70%);
 }
 
 a {
     text-decoration: none;
+    background-color: transparent;
+
 }
 
 li {
@@ -48,18 +67,22 @@ li {
 .container {
     display: grid;
     grid-template-columns: repeat(16, 1fr);
-    grid-template-rows: 97px auto 380px;
-    grid-template-areas: "header header header header header header header header header header header header header header header header";
+    grid-template-rows: auto auto 380px;
+    grid-template-areas: "header header header header header header header header header header header header header header header header"
+    "main main main main main main main main main main main main main main main main"
+    ;
 }
 
 /* ------------------ Header -------------------- */
 .container header {
     grid-area: header;
     width: 100%;
+    height: 97px;
+    position: absolute;
+    z-index: 2;
 }
 
 .container header .content-header {
-    background-color: black;
     width: 1140px;
     height: 100%;
     justify-content: space-between;
@@ -71,36 +94,48 @@ li {
     width:100%;
     max-width: 124px;
     height: 100%;
+    justify-content: flex-start;
+}
+
+.container header .content-header .cadre-logo a {
+    display: block;
+}
+
+.container header .content-header .cadre-logo a img {
+    display: block;
+    width: 110%;
+    height: 100%;
 }
 
 /* --- Menu --- */
 .container header .content-header .main-menu {
     width: 100%;
-    max-width: 500px;
+    max-width: 485px;
     height: 100%;
     column-gap: 10px;
     justify-content: space-between;
 }
 
 .container header .content-header .main-menu ul {
-    width: 87%;
+    width: 85%;
     height: 100%;
 }
 
 .container header .content-header .main-menu ul li {
-    display:block;
     height: 100%;
-    width: calc(100% / 6);
-    text-align:center;
+    text-align:center;    
     line-height: 7;
 }
 
 .container header .content-header .main-menu ul li a {
     color:rgb(255, 255, 255);
     display:block;
+    width: 100%;
     height: 100%;
     font-size: 14px;
     transition: 0.3s;
+    padding: 0 10px;
+    letter-spacing: 0.5px;
 }
 
 
@@ -133,5 +168,99 @@ li {
 
 /* --------------- Main ---------------- */
 .container main {
-    height: 2000px
+    grid-area: main;
+    width: 100%;
+}
+
+.container main .landing {
+    width: 100%;
+    background-color: rgb(0 0 0 / 60%);
+    background-image: url("../images/landing.jpg"); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    justify-content: flex-start;
+    position: relative;
+}
+
+.container main .landing .overlay {
+    background-color: rgb(0 0 0 / 60%);
+    position:absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+}
+
+.container main .landing .art-landing {
+    background-color: var(--transparent-color);
+    width: 50%;
+    min-height: 328px;
+    z-index: 1;
+    justify-content: flex-end
+}
+
+.container main .landing .art-landing .cadre-descript {
+    align-items: flex-start;
+    width: 500px;
+    height: auto;
+    z-index: 1;    
+    row-gap: 20px;
+    color: white;
+    margin: 0 50px;
+}
+
+.container main .landing .art-landing .cadre-descript h2 {
+    font-size: 32px;
+    font-weight: normal;
+    line-height: 1.5;
+}
+
+.container main .landing .art-landing .cadre-descript p {
+    font-size: 14px;
+    line-height: 2;
+}
+
+.container main .landing .page {
+    position: absolute;
+    width: 100px;
+    height: 80px;
+    bottom: 0;
+    right: calc(50% - 50px)
+}
+
+.container main .landing .page li {
+    z-index: 1;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid white;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    bottom: 0;
+    right: calc(50% - 50px);
+}
+
+.container main .landing .page li[class='active'] {
+    background-color: var(--main-color);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* --------------- Footer ---------------- */
+.container footer {
+    grid-area: footer;
+    width: 100%;
 }
