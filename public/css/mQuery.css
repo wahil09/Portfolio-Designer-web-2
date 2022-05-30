@@ -5,6 +5,16 @@
     .container header .content-header {
         width: 970px;
     }
+
+
+    /* --- Menu --- */ 
+    .container main .services .container-services .cadre-services .service {
+        width: 450px;
+    }
+
+    .container main .services .container-services .cadre-services .service .info-service {
+        width: 346px
+    }
 }
 
 
@@ -16,6 +26,18 @@
 
     .container header .content-header {
         width: 750px;
+    }
+
+
+    /* --- Main --- */ 
+    .container main .services .container-services .cadre-services .service {
+        width: 700px;
+        max-width: 100%;
+    }
+    
+    .container main .services .container-services .cadre-services .service .info-service {
+        width: 85%;
+        max-width: 100%;
     }
 
 }
@@ -81,7 +103,7 @@
     }
 
 
-    /* --------- Menu ----------- */
+    /* --------- Main ----------- */
     .container main .landing .art-landing {
         background-color: var(--transparent-color);
         width: 100%;
@@ -90,6 +112,21 @@
     
     .container main .landing .art-landing .cadre-descript {
         width: 100%;
+    }
+
+    /* -- Services -- */
+    .container main .services .container-services .cadre-services .service {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        row-gap: 25px;
+    }
+    
+    .container main .services .container-services .cadre-services .service .info-service {
+        width: 85%;
+        max-width: 100%;
     }
 }
 

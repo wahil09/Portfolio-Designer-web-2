@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700&display=swap');
 
 * {
     padding:0%;
@@ -6,14 +7,61 @@
     scroll-behavior: smooth;
 }
 
+
+/* ---- FOr All Title ---- */
+.main-heading {
+    width: 100%;
+    text-align: center;
+}
+
+.main-heading h2 {
+    position: relative;
+    font-weight: normal;
+    font-size: 40px;
+    text-transform: uppercase;
+    color:#000;
+    padding-bottom: 14px;
+}
+
+.main-heading h2:before {
+    position: absolute;
+    content: '';
+    border-bottom: 2px solid #000;
+    width: 70%;
+    bottom: 0;
+
+}
+
+.main-heading h2::after {
+    position: absolute;
+    content: '';
+    width: 13px;
+    height: 13px;
+    background-color: #fff;
+    border: 2px solid black;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    bottom: -8px;
+}
+
+.main-heading p {
+    padding-top: 40px;
+    max-width: 550px;
+}
+
 .left, .right {
     color: #fff;
     position: absolute;
     z-index: 3;
 }
 .left:hover, .right:hover {
-    color: rgb(133, 114, 114);
     cursor: pointer;
+}
+.left:active, .right:active {
+    color: rgb(133, 114, 114);
 }
 .left {
     left: 30px
@@ -110,14 +158,13 @@ li {
 /* --- Menu --- */
 .container header .content-header .main-menu {
     width: 100%;
-    max-width: 485px;
+    max-width: 480px;
     height: 100%;
-    column-gap: 10px;
     justify-content: space-between;
 }
 
 .container header .content-header .main-menu ul {
-    width: 85%;
+    width: 84%;
     height: 100%;
 }
 
@@ -135,7 +182,6 @@ li {
     font-size: 14px;
     transition: 0.3s;
     padding: 0 10px;
-    letter-spacing: 0.5px;
 }
 
 
@@ -172,6 +218,8 @@ li {
     width: 100%;
 }
 
+
+/* ------ Landing ------ */
 .container main .landing {
     width: 100%;
     background-color: rgb(0 0 0 / 60%);
@@ -248,6 +296,53 @@ li {
 }
 
 
+/* ------ Services ------ */
+.container main .services {
+    background-color:rgb(255, 255, 255);
+    width: 100%;
+    min-height: 835px
+}
+
+/* ------ Services ------ */
+.container main .services .container-services {
+    width: 100%;
+    max-width: 1170px;
+    justify-content: space-between;
+    padding: 80px 0;
+    line-height: 2;
+    color: #777;
+    border-bottom: 1px solid rgb(178, 174, 174);
+    row-gap: 95px;
+}
+
+.container main .services .container-services .cadre-services {
+    width: 100%;
+    row-gap: 50px;
+    column-gap: 30px;
+}
+
+.container main .services .container-services .cadre-services .service {
+    width: 100%;
+    max-width: 550px;
+    align-items: flex-start;
+    justify-content: space-between;
+    
+}
+
+.container main .services .container-services .cadre-services .service i {
+    color: #000;
+    padding-top: 5px;
+}
+
+.container main .services .container-services .cadre-services .service .info-service {
+    width: 100%;
+    max-width: 446px;
+}
+
+.container main .services .container-services .cadre-services .service .info-service h3 {
+    padding-bottom: 20px;
+    color: var(--main-color);
+}
 
 
 
