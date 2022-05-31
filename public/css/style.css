@@ -344,6 +344,68 @@ li {
     color: var(--main-color);
 }
 
+/* ---- Design-mobile ---- */
+.container main .services .design {
+    position: relative;
+    width: 100%;
+    background-image: url("../images/design-features.jpg");
+    justify-content: space-between;
+    overflow: hidden;
+    padding: 72px 0;
+}
+
+.container main .services .design::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color:rgb(0 0 0 / 60%);
+}
+
+.container main .services .design .cadre-img {
+    width: 45%;
+}
+
+
+.container main .services .design .cadre-img img {
+    transform: translateY(150px);
+    -webkit-transform: translateY(150px);
+    -moz-transform: translateY(150px);
+    -ms-transform: translateY(150px);
+    -o-transform: translateY(150px);
+}
+
+.container main .services .design .info-design {
+    background-color: var(--transparent-color);
+    color: white;
+    width: 54%;
+    align-items: flex-start;
+    padding: 50px;
+    row-gap: 55px;
+    z-index: 1;
+}
+
+.container main .services .design .info-design h2 {
+    font-weight: normal;
+}
+
+.container main .services .design .info-design ul li {
+    padding: 15px 0;
+    position: relative;
+    padding-left: 35px
+}
+
+.container main .services .design .info-design ul li::before {
+    position: absolute;
+    font-family: "Font Awesome 5 Free";
+    content: "\f108";
+    font-weight: 900;
+    top: 17px;
+    left: -5px;
+}
+
 
 
 

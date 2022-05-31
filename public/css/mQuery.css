@@ -128,6 +128,20 @@
         width: 85%;
         max-width: 100%;
     }
+
+
+    /* --- Design --- */
+    .container main .services .design {
+        padding: 100px 0
+    }
+    .container main .services .design .cadre-img {
+        display: none;
+    }
+
+    .container main .services .design .info-design {
+        width: 100%;
+    }
+
 }
 
 
