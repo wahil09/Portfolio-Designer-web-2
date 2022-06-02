@@ -20,16 +20,15 @@
     font-size: 40px;
     text-transform: uppercase;
     color:#000;
-    padding-bottom: 14px;
+    padding-bottom: 12px;
 }
 
 .main-heading h2:before {
     position: absolute;
     content: '';
-    border-bottom: 2px solid #000;
-    width: 70%;
+    border-bottom: 3px solid #000;
+    width: 120px;
     bottom: 0;
-
 }
 
 .main-heading h2::after {
@@ -50,6 +49,8 @@
 .main-heading p {
     padding-top: 40px;
     max-width: 550px;
+    color: #777;
+    line-height: 2;
 }
 
 .left, .right {
@@ -83,13 +84,13 @@ body {
 
 :root {
     --main-color: #19c8fa;
-    --transparent-color: rgb(15 116 143 / 70%);
+    --transparent-color: c;
 }
 
 a {
     text-decoration: none;
     background-color: transparent;
-
+    
 }
 
 li {
@@ -407,11 +408,145 @@ li {
 }
 
 
+/* ---- Portfolio ---- */
+.container main .portfolio {
+    width: 100%;
+    height:auto;
+    background-color: rgb(255, 255, 255);
+}
 
+.container main .portfolio .container-portfolio {
+    width: 100%;
+    height:auto;
+    padding: 100px 0;
+    row-gap: 100px;
+}
 
+.container main .portfolio .container-portfolio .main-heading h2 {
+    padding-bottom: 30px
+}
 
+.container main .portfolio .container-portfolio .content-portfolio {
+    width: 100%;
+    row-gap: 50px;
+}
 
+.container main .portfolio .container-portfolio .content-portfolio ul li {
+    padding: 10px 10px
+}
 
+.container main .portfolio .container-portfolio .content-portfolio ul li:first-child {
+    background-color: var(--main-color);
+    color: white;
+}
+
+.container main .portfolio .container-portfolio .content-portfolio .projets {
+    width: 100%;
+    margin-top: 8px
+}
+
+.container main .portfolio .container-portfolio .content-portfolio .projets .projet {
+    width: calc(100% / 4);
+    position: relative;
+    overflow: hidden;
+}
+
+.container main .portfolio .container-portfolio .content-portfolio .projets .projet img {
+    width: 100%;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+.container main .portfolio .container-portfolio .content-portfolio .projets .projet .info {
+    position:absolute;
+    background-color: rgb(255, 255, 255);
+    overflow: hidden;
+    width: 100%;
+    height: 0px;
+    z-index: 1;
+    bottom: 0;
+    transition: 0.2s;
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -ms-transition: 0.2s;
+    -o-transition: 0.2s;
+    align-items: flex-start;
+    row-gap: 10px;
+}
+
+.container main .portfolio .container-portfolio .content-portfolio .projets .projet:hover .info{
+    height: 88px;
+    padding: 20px;
+}
+
+.container main .portfolio .container-portfolio .content-portfolio .projets .projet:hover img {
+    transform: rotate(0.1turn);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1);
+
+}
+
+.container main .portfolio .container-portfolio .content-portfolio .projets .projet .info p{
+    color: var(--main-color);
+}
+
+.container main .portfolio .container-portfolio .content-portfolio .btn-more a {
+    padding: 15px 20px;
+    background-color: var(--main-color);
+    color:#fff
+}
+
+.container main .portfolio .cadre-video {
+    width: 100%;
+    margin-top: 52px;
+    position: relative;
+}
+
+.container main .portfolio .cadre-video::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0 0 0 / 40%);
+}
+
+.container main .portfolio .cadre-video video {
+    width: 100%;
+}
+
+.container main .portfolio .cadre-video .info {
+    position: absolute;
+    background-color: rgb(15 116 143 / 70%);
+    width: 100%;
+    height: 244px;
+    color:#fff;
+    padding: 20px 0;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+
+.container main .portfolio .cadre-video .info h2 {
+    font-weight: normal;
+    text-align: center;
+}
+
+.container main .portfolio .cadre-video .info a {
+    color:#fff;
+    background-color: black;
+    padding: 10px 20px;
+}
 
 
 
