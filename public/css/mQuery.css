@@ -20,6 +20,22 @@
     .container main .portfolio .container-portfolio .content-portfolio .projets .projet {
         width: 50%;
     }
+
+
+    /* --- About Us --- */
+    .container main .about .container-about .stats .content-state .box {
+        width: 235px;
+    }
+
+    .container main .about .container-about .our-skills {
+        width: 100%;
+        column-gap: 0px;
+        row-gap: 50px;
+    }
+
+    .container main .about .container-about .our-skills .avis, .skills {
+        width: 423px;
+    }
 }
 
 
@@ -45,6 +61,16 @@
         max-width: 100%;
     }
 
+
+    /* --- About Us --- */
+    .container main .about .container-about .stats .content-state .box {
+        width: 360px;
+    }
+
+
+    .container main .about .container-about .our-skills .avis, .skills {
+        width: 720px;
+    }
 }
 
 
@@ -165,6 +191,48 @@
         font-size: 18px !important;
     }
 
+
+    /* --- About --- */
+    .container main .about .container-about .row-1 .cadre-img img {
+        margin-top: 35px;
+        transform: translateY(60px);
+        -webkit-transform: translateY(60px);
+        -moz-transform: translateY(60px);
+        -ms-transform: translateY(60px);
+        -o-transform: translateY(60px);
+    }
+
+    .container main .about .container-about .stats .content-state {
+        width: 92%;
+    }
+
+    .container main .about .container-about .stats .content-state .box {
+        width: 100%;
+    }
+
+    .container main .about .container-about .our-skills .main-heanding {
+        width: 100%;
+    }
+
+    .container main .about .container-about .our-skills .avis, .skills {
+        width: 100%;
+        padding: 0 15px
+    }
+
+    .container main .about .container-about .our-skills .avis .all-users .user {
+        flex-direction: column;
+        row-gap: 30px;
+    }
+
+    .container main .about .container-about .our-skills .avis .all-users .user .avis-user {
+        width: 100%;
+        text-align: center;
+    }
+
+    .container main .about .quote .content q {
+        font-size: 22px;
+    }
+    
 }
 
 
@@ -191,6 +259,52 @@
     .container main .portfolio .cadre-video .info span, a {
         font-size: 13px;
     }
+
+
+    /* --- About --- */
+    .container main .about .container-about .stats .content-state .box .number {
+        font-size: 40px;
+    }
+
+
+    .container main .about .quote .content q {
+        font-size: 20px;
+    }
 }
 
 
+
+
+@media screen and (max-width: 300px) {
+    /* --- Header --- */
+
+    /* --- Main --- */
+    .container main .landing .art-landing .cadre-descript h2 {
+        font-size: 26px;
+    }
+
+
+    /* --- Portfolio --- */
+    .container main .portfolio .cadre-video .info {
+        height: 130px;
+    }
+
+    .container main .portfolio .cadre-video .info h2 {
+        font-size: 15px !important;
+    }
+
+    .container main .portfolio .cadre-video .info span, a {
+        font-size: 13px;
+    }
+
+    /* --- About --- */
+    .container main .about .container-about .row-1 .cadre-img img {
+        margin-top: 35px;
+        transform: translateY(45px);
+        -webkit-transform: translateY(45px);
+        -moz-transform: translateY(45px);
+        -ms-transform: translateY(45px);
+        -o-transform: translateY(45px);
+    }
+    
+}
