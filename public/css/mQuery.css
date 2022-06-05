@@ -36,6 +36,34 @@
     .container main .about .container-about .our-skills .avis, .skills {
         width: 423px;
     }
+
+    /* --- Pricing --- */
+    .container main .pricing .container-pricing {
+        width: 970px;
+    }
+
+    .container main .pricing .container-pricing .plans .plan {
+        width: 293px;
+        background-color: #fcfcfc;
+        text-align: center;
+    }
+
+    .container main .pricing .subscribe form {
+        width: 970px;
+    }
+
+    .container main .pricing .subscribe form .cadre-input input[type='email'] {
+        width: 213px;
+    }
+    
+    .container main .pricing .subscribe form .cadre-input input[type="submit"] {
+        width: 130px;
+    }
+    
+    .container main .pricing .subscribe form p {
+        width: 55%;
+    }
+
 }
 
 
@@ -70,6 +98,38 @@
 
     .container main .about .container-about .our-skills .avis, .skills {
         width: 720px;
+    }
+
+    /* --- Pricing --- */
+    .container main .pricing .container-pricing {
+        width: 750px;
+    }
+
+    .container main .pricing .container-pricing .plans {
+        padding: 0 15px;
+    }
+
+    .container main .pricing .container-pricing .plans .plan {
+        width: 345px;
+        background-color: #fcfcfc;
+        text-align: center;
+    }
+
+    .container main .pricing .subscribe form {
+        width: 750px;
+    }
+
+    .container main .pricing .subscribe form .cadre-input input[type='email'] {
+        width: 370px;
+    }
+    
+    .container main .pricing .subscribe form .cadre-input input[type="submit"] {
+        width: 130px;
+    }
+    
+    .container main .pricing .subscribe form p {
+        width: 100%;
+        text-align: center;
     }
 }
 
@@ -233,9 +293,49 @@
         font-size: 22px;
     }
     
+
+    /* --- Pricing --- */
+    .container main .pricing .container-pricing {
+        width: 100%;
+    }
+
+    .container main .pricing .container-pricing .plans {
+        padding: 0 15px;
+    }
+
+    .container main .pricing .container-pricing .plans .plan {
+        width: calc(96% / 2);
+        background-color: #fcfcfc;
+        text-align: center;
+    }
+
+    .container main .pricing .subscribe form {
+        width: 100%;
+    }
 }
 
 
+@media screen and (max-width:574px) {
+
+    /* --- Pricing --- */
+    .container main .pricing .container-pricing {
+        width: 100%;
+    }
+
+    .container main .pricing .container-pricing .plans {
+        padding: 0 15px;
+    }
+
+    .container main .pricing .container-pricing .plans .plan {
+        width: 100%;
+        background-color: #fcfcfc;
+        text-align: center;
+    }
+
+    .container main .pricing .subscribe form .cadre-input input[type='email'] {
+        width: calc(100% - 130px);
+    }
+}
 
 
 @media screen and (max-width: 480px) {
@@ -257,7 +357,7 @@
     }
 
     .container main .portfolio .cadre-video .info span, a {
-        font-size: 13px;
+        font-size: 14px;
     }
 
 
@@ -293,9 +393,7 @@
         font-size: 15px !important;
     }
 
-    .container main .portfolio .cadre-video .info span, a {
-        font-size: 13px;
-    }
+
 
     /* --- About --- */
     .container main .about .container-about .row-1 .cadre-img img {
@@ -307,4 +405,29 @@
         -o-transform: translateY(45px);
     }
     
+
+    /* --- Pricing --- */
+
+    .container main .pricing .subscribe form .cadre-input {
+
+    }
+
+    .container main .pricing .subscribe form .cadre-input i {
+        top: 25%;
+    }
+
+    .container main .pricing .subscribe form .cadre-input input[type='email'] {
+        padding-left: 0px;
+        width: 100%;
+        text-align: center
+    }
+    
+    .container main .pricing .subscribe form .cadre-input input[type="submit"] {
+        text-transform: uppercase;
+        margin: 0 auto;
+        width: 100%;
+        background-color: var(--main-color);
+        cursor: pointer;
+    }
+
 }

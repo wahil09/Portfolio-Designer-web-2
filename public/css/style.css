@@ -813,9 +813,201 @@ li {
 }
 
 
+/* --- Pricing --- */
+.container main .pricing {
+    width: 100%;
+}
 
+.container main .pricing .container-pricing {
+    width: 1170px;
+    padding: 100px 0;
+}
 
+.container main .pricing .container-pricing .main-heading h2 {
+    padding-bottom: 30px;
+}
 
+.container main .pricing .container-pricing .plans {
+    width: 100%;
+    padding: 0 20px;
+    margin: 100px 0 50px;
+    row-gap: 30px;
+    justify-content: space-between
+}
+
+.container main .pricing .container-pricing .plans .plan {
+    width: 263px;
+    background-color: #fcfcfc;
+    text-align: center;
+}
+
+.container main .pricing .container-pricing .plans .plan .head {
+    width: 100%;
+    border-bottom: 1px solid var(--main-color);
+    border-top: 1px solid var(--main-color);
+}
+
+.container main .pricing .container-pricing .plans .plan .head h3 {
+    text-transform: uppercase;
+    font-weight: normal;
+    margin: 40px 0 0;
+}
+
+.container main .pricing .container-pricing .plans .plan .head span {
+    position: relative;
+    display: inline-block;
+    font-size: 60px;
+    font-weight: bold;
+    margin: 20px 0 40px;
+}
+
+.container main .pricing .container-pricing .plans .plan .head span::before, span::after {
+    position: absolute;
+}
+
+.container main .pricing .container-pricing .plans .plan .head span::before {
+    position: absolute;
+    content: "$";
+    top: -5px;
+    left: -30px;
+    font-weight: normal;
+    font-size: 25px;
+}
+
+.container main .pricing .container-pricing .plans .plan .head span::after {
+    content: "/Mo";
+    bottom: 5px;
+    right: -50px;
+    font-size: 20px;
+
+}
+
+.container main .pricing .container-pricing .plans .plan ul {
+    border-bottom: 1px solid var(--main-color);
+}
+
+.container main .pricing .container-pricing .plans .plan ul li {
+    padding: 20px 0;
+    position: relative;
+}
+
+.container main .pricing .container-pricing .plans .plan ul li::after {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 140px;
+    height: 1px;
+    background-color: var(--main-color);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+
+.container main .pricing .container-pricing .plans .plan ul li:last-child:after {
+    display: none;
+}
+
+.container main .pricing .container-pricing .plans .plan .foot {
+    width: 100%;
+}
+
+.container main .pricing .container-pricing .plans .plan .foot a {
+    display: block;
+    padding: 20px;
+    margin: 30px auto;
+    width: 110px;
+    border: 1px solid var(--main-color);
+    text-transform: capitalize;
+}
+
+.container main .pricing .container-pricing .plus-info {
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+}
+
+.container main .pricing .container-pricing .plus-info p {
+    font-size: 20px;
+}
+
+.container main .pricing .container-pricing .plus-info a {
+    display: inline-block;
+    padding: 15px 30px;
+    margin-top: 20px;
+    background-color: var(--main-color);
+    color:rgb(255, 255, 255);
+}
+
+.container main .pricing .subscribe {
+    position: relative;
+    background-image: url("../images/subscribe.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    padding: 100px 20px;
+}
+
+.container main .pricing .subscribe::before {
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0 0 0 / 50%);
+}
+
+.container main .pricing .subscribe form {
+    width: 1170px;
+    height: auto;
+    color: white;
+    column-gap: 20px;
+    row-gap: 30px;
+    z-index: 1;
+}
+
+.container main .pricing .subscribe form .cadre-input {
+    position: relative;
+    border: 1px solid #fcfcfc
+}
+
+.container main .pricing .subscribe form .cadre-input input {
+    padding: 20px;
+    color: white;
+    border: none
+}
+
+.container main .pricing .subscribe form .cadre-input  input::placeholder {
+    color: white;
+}
+
+.container main .pricing .subscribe form .cadre-input i {
+    position: absolute;
+    top: 50%;
+    left: 25px;
+    font-size: 22px
+}
+
+.container main .pricing .subscribe form .cadre-input input[type='email'] {
+    padding-left: 63px;
+    width: 295px;
+    background-color: transparent;
+}
+
+.container main .pricing .subscribe form .cadre-input input[type="submit"] {
+    text-transform: uppercase;
+    width: 130px;
+    background-color: var(--main-color);
+    cursor: pointer;
+}
+
+.container main .pricing .subscribe form p {
+    width: 55%;
+    line-height: 2;
+}
 
 
 /* --------------- Footer ---------------- */
