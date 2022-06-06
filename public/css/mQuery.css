@@ -64,6 +64,11 @@
         width: 55%;
     }
 
+    /* --- Contact --- */
+    .container main .contact .container-contact {
+        width: 970px;
+    }
+
 }
 
 
@@ -130,6 +135,12 @@
     .container main .pricing .subscribe form p {
         width: 100%;
         text-align: center;
+    }
+
+
+    /* --- Contact --- */
+    .container main .contact .container-contact {
+        width: 750px;
     }
 }
 
@@ -311,6 +322,31 @@
 
     .container main .pricing .subscribe form {
         width: 100%;
+    }
+
+
+    /* --- Contact --- */
+    .container main .contact .container-contact {
+        width: 100%;
+    }
+
+    .container main .contact .container-contact .content {
+        width: 100%;
+        flex-direction: column-reverse;
+        align-items: center;
+        padding: 0 20px;
+        row-gap: 40px;
+    }
+
+    .container main .contact .container-contact .content .form {
+        width: 100%;
+    }
+
+    .container main .contact .container-contact .content .info {
+        width: 100%;
+        text-align: center;
+        align-items: center;
+        row-gap: 30px;
     }
 }
 

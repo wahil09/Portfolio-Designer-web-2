@@ -1010,6 +1010,77 @@ li {
 }
 
 
+.container main .contact {
+    width: 100%;
+}
+
+.container main .contact .container-contact {
+    width: 1170px;
+    margin: 100px auto;
+}
+
+.container main .contact .container-contact .main-heading {
+    margin: 100px 0;
+}
+
+.container main .contact .container-contact .main-heading h2 {
+    padding-bottom: 30px;
+}
+
+.container main .contact .container-contact .content {
+    width: 100%;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.container main .contact .container-contact .content .form {
+    width: 70%;
+    row-gap: 30px;
+    align-items: flex-end;
+}
+
+.container main .contact .container-contact .content .form input, .txtarea  {
+    width: 100%;
+    padding: 20px;
+    outline: none;
+    border: 1px solid#ccc;
+}
+
+.container main .contact .container-contact .content .form .txtarea {
+    
+}
+
+.container main .contact .container-contact .content .form input[type='submit'] {
+    width: 160px;
+    background-color: var(--main-color);
+    color: white;
+    margin-right: 0px;
+    cursor: pointer;
+}
+
+.container main .contact .container-contact .content .info {
+    color: #777;
+    row-gap: 80px;
+    align-items: flex-start;
+    line-height: 2;
+    width: 25%;
+}
+
+.container main .contact .container-contact .content .info h4 {
+    text-transform: uppercase;
+    font-weight: normal;
+    margin-bottom: 30px;
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+    line-height: 1;
+
+}
+
+.container main .contact .container-contact .content .info .phone span {
+    display: block;
+}
+
+
 /* --------------- Footer ---------------- */
 .container footer {
     grid-area: footer;
