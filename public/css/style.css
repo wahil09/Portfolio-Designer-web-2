@@ -119,6 +119,7 @@ li {
     grid-template-rows: auto auto 380px;
     grid-template-areas: "header header header header header header header header header header header header header header header header"
     "main main main main main main main main main main main main main main main main"
+    "footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer "
     ;
 }
 
@@ -1010,17 +1011,19 @@ li {
 }
 
 
+/* --- Contact --- */
 .container main .contact {
     width: 100%;
 }
 
 .container main .contact .container-contact {
     width: 1170px;
-    margin: 100px auto;
+    padding: 100px 0;
+    margin: 0 auto;
 }
 
 .container main .contact .container-contact .main-heading {
-    margin: 100px 0;
+    margin-bottom: 100px;
 }
 
 .container main .contact .container-contact .main-heading h2 {
@@ -1041,7 +1044,7 @@ li {
 
 .container main .contact .container-contact .content .form input, .txtarea  {
     width: 100%;
-    padding: 20px;
+    padding: 19px;
     outline: none;
     border: 1px solid#ccc;
 }
@@ -1051,7 +1054,7 @@ li {
 }
 
 .container main .contact .container-contact .content .form input[type='submit'] {
-    width: 160px;
+    width: 157px;
     background-color: var(--main-color);
     color: white;
     margin-right: 0px;
@@ -1085,4 +1088,60 @@ li {
 .container footer {
     grid-area: footer;
     width: 100%;
+    padding: 0px;
+    background-image: url('../images/subscribe.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.container footer::before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgb(0 0 0 / 70%);
+}
+
+.container footer .container-footer {
+    z-index: 1;
+    row-gap: 38px;
+    color: white;
+}
+
+.container footer .container-footer a {
+    color: white;
+}
+
+.container footer .container-footer .social {
+    row-gap: 20px;
+    padding-bottom: 20px;
+}
+
+.container footer .container-footer .social p {
+    font-size: 22px;
+    text-transform: uppercase;
+    border-bottom: 1px solid white;
+    padding:  20px;
+}
+
+.container footer .container-footer .social .lien {
+    font-size: 17px;
+}
+
+.container footer .container-footer .social .lien a {
+    display: inline-block;
+    padding: 10px 15px;
+}
+
+.container footer .container-footer p {
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.container footer .container-footer p a {
+    color: var(--main-color);
+    font-weight: bold;
 }
